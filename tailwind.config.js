@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*html'],
+  content: ['./src/**/*.{html,js}', './public/index.html', './*.{html,js}'],
   theme: {
     extend: {
       colors: {
-        'custom-sky': '#F6F9FF',
-        'custom-blue': '#1891F3',
         'custom-navy': '#011730',
+        'custom-blue': '#1891F3',
+        'custom-sky': '#ffc107',
       },
     },
   },

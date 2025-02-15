@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/output.css">
-    <title>contact us</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_down" />
+    <link href="./src/output.css" rel="stylesheet">
+    <title>about us</title>
 </head>
 <body>
     <header>
-        <section class="w-full  bg-custom-navy">
+        <section class="w-full  bg-custom-navy bg-[#011730]">
           <div class="flex flex-col sm:flex-row sm:gap-5 justify-center items-center">
             <p class="text-white w-fit text-center">Hillpay mobile app version 1.0 is coming soon</p>
-            <a class="text-custom-blue hover:underline" href="#">Join Waitlist</a>
+            <a class="text-custom-blue text-[#1891F3] hover:underline" href="#">Join Waitlist</a>
           </div>
         </section>
         <nav class="mx-auto flex max-w-7xl items-center justify-between p-3 lg:p-4 lg:px-[120px]" aria-label="Global">
@@ -68,7 +70,7 @@
     
             <a href="#">Features</a>
             <a href="#">Marketplace</a>
-            <a href="#">Company</a>
+            <a href="/contact.html">Company</a>
           </div>
           <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <button class="bg-custom-blue hover:bg-custom-navy w-[135px] px-4 py-2 text-white rounded-[8px]">Get
@@ -77,20 +79,89 @@
         </nav>
       </header>
 
+      <!-- hero section -->
+      <section class=" w-full  flex justify-center bg-custom-sky ">
+        <div class="relative px-4 sm:pl-8 py-4 h-[50%] self-center flex flex-col gap-2 sm:gap-4">
+          <h3 class="font-extrabold text-[16px] sm:text-[30px] lg:text-[40px] xl:text-[55px] ">Experience Fast, Reliable,
+            and Secure VTU Services</h3>
+    
+          <p class="text-[14px] sm:text-[20px] lg:text-[24px] opacity-50">Our platform offers lightning-fast, secure, and
+            reliable services, ensuring you never miss a moment of connectivity.</p>
+    
+          <button
+            class="bg-custom-blue self-end sm:self-start hover:bg-custom-navy p-1 sm:p-2 w-24 sm:w-28 rounded-md text-white text-[14px] sm:text-[16px]">Get
+            Started</button>
+    
+          <!-- <img class="absolute bottom-6" src="./src/images/hero text down.svg" alt=""> -->
+    
+        </div>
+        <img class="w-[50%] hidden sm:block" src="/src/images/aboutDominant.svg" alt="">
+      </section>
 
 
-
-      <section class="py-4 m-auto px-2 sm:px-8 w-full flex justify-center items-center gap-7 xl:gap-[150px]">
-        <div class="flex justify-center items-center gap-2 py-3  w-[40%] lg:w-[35%]">
-          <h2 class="font-bold  text-[16px] sm:text-[25px] lg:text-[40px] ">We are here to help the customers to get their success.</h2>
+ 
+      
+      <section class="py-4 m-auto px-2 sm:px-8 w-full flex justify-center items-center gap-2 xl:gap-[150px]">
+        <div class="flex justify-center items-center gap-2 py-3  w-[50%] lg:w-[35%]">
+          <h2 class="font-bold  text-[25px] sm:text-[25px] lg:text-[40px]">We are here to help the customers to get their success.</h2>
         </div>
     
-        <div class="pl- sm:w-[60%] lg:w-[450px] xl:w-[440px]  flex flex-col gap-3 ">    
+        <div class="w-[50%] sm:w-[60%] lg:w-[450px] xl:w-[440px]  flex flex-col gap-3 ">    
           <p class="text-[14px] sm:text-[20px] lg:text-[24px] opacity-50">HillPay is a leading provider of virtual top-up (VTU) services in Nigeria. We offer a wide range of recharge options, including airtime, data, and utility bills, as well as scratch card purchases.
           </p>
           <p>
           <p class="text-[14px] sm:text-[20px] lg:text-[24px] opacity-50">Our team is made up of experienced professionals who are passionate about providing the best possible service to our customers
           </p>
+        </div>
+      </section>
+
+      <section class="bg-custom-navy bg-[#011730] flex flex-col items-center justify-center gap-[20px] sm:gap-[50px] py-[40px] sm:py-[70px] px-[20px] text-white">
+        <h2 class="font-bold text-center lg:gap-10 text-[24px] sm:text-[25px] lg:text-[30px] ">Our Commitment to Excellence</h2>
+
+        <p class="text-[14px] text-center sm:text-[20px] lg:text-[24px] lg:w-[800px] lg:py[10008px] opacity-50">Our mission is to make it easy for our customers to recharge their accounts and pay their bills online. We are committed to providing a fast, reliable, and secure platform that meets the needs of our customers.
+        </p>
+
+        <!-- container for customer satisfaction, reliability, etc -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 center  justify-center items-start gap-[20px] px-[10px] sm:px-[25px] lg:px-[45px]">
+
+          <div class="flex">
+            <div class="flex items-start gap-2">
+              <img class="w-[20px] sm:w-[40px]" src="./src/images/customer.svg" alt="">
+              <div class=" flex flex-col gap-1">
+                <h3 class="font-bold  text-[14px] sm:text-[20px] lg:text-[25px]">Customer satisfaction</h3>
+                <p class="text-[14px] sm:text-[20px] lg:text-[18px] opacity-50">Your satisfaction is our priority. We strive to provide a seamless and enjoyable experience for everyone.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="flex items-start gap-2">
+              <img class="w-[20px] sm:w-[40px]" src="./src/images/reliability.svg" alt="">
+              <div class=" flex flex-col gap-1">
+                <h3 class="font-bold  text-[14px] sm:text-[20px] lg:text-[25px]">Reliability</h3>
+                <p class="text-[14px] sm:text-[20px] lg:text-[18px] opacity-50">We invest in cutting-edge technology and maintain high standards to ensure uninterrupted operation.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="flex items-start gap-2">
+              <img class="w-[20px] sm:w-[40px]" src="./src/images/innovation.svg" alt="">
+              <div class=" flex flex-col gap-1">
+                <h3 class="font-bold  text-[14px] sm:text-[20px] lg:text-[25px]">Innovation</h3>
+                <p class="text-[14px] sm:text-[20px] lg:text-[18px] opacity-50">We are always looking for new ways to improve our services and stay ahead of the curve.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="flex items-start gap-2">
+              <img class="w-[20px] sm:w-[40px]" src="./src/images/security.svg" alt="">
+              <div class=" flex flex-col gap-1">
+                <h3 class="font-bold  text-[14px] sm:text-[20px] lg:text-[25px]">Security</h3>
+                <p class="text-[14px] sm:text-[20px] lg:text-[18px] opacity-50">We employ advanced security measures to protect your personal information and financial transactions.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -101,9 +172,7 @@
 
 
 
-
-
-      <footer class="bg-custom-navy px-5 lg:px-36 py-4 flex flex-wrap text-white justify-between gap-8">
+      <footer class="bg-custom-navy bg-[#011730] px-5 lg:px-36 py-4 flex flex-wrap text-white justify-between gap-8">
         <div class="flex flex-col gap-4 w-[150px]">
           <img class="w-24 sm:w-full" src="./src/images/logo.svg" alt="">
           <h3 class="text-[12px] text-sm">HillPay: Your One-Stop

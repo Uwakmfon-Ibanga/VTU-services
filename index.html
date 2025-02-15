@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dist/output.css">
+  
+  <link href="./src/output.css" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_down" />
     <link rel="icon" href="./src/images/logo.svg" type="image/x-icon" />
@@ -12,10 +13,10 @@
 
 <body>
   <header>
-    <section class="w-full  bg-custom-navy">
+    <section class="w-full  bg-custom-navy bg-[#011730]">
       <div class="flex flex-col sm:flex-row sm:gap-5 justify-center items-center">
         <p class="text-white w-fit text-center">Hillpay mobile app version 1.0 is coming soon</p>
-        <a class="text-custom-blue hover:underline" href="#">Join Waitlist</a>
+        <a class="text-custom-blue text-[#1891F3] hover:underline" href="#">Join Waitlist</a>
       </div>
     </section>
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-3 lg:p-4 lg:px-[120px]" aria-label="Global">
@@ -74,7 +75,7 @@
 
         <a href="#">Features</a>
         <a href="#">Marketplace</a>
-        <a href="#">Company</a>
+        <a href="/contact.html">Company</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <button class="bg-custom-blue hover:bg-custom-navy w-[135px] px-4 py-2 text-white rounded-[8px]">Get
@@ -120,14 +121,14 @@
       <p class="text-[14px] sm:text-[20px] lg:text-[24px] opacity-50">Experience the peace of mind that comes with
         knowing your services are always reliable. Our commitment to excellence ensures you can count on us, every time.
       </p>
-      <button class="text-[14px] sm:text-[20px] self-end lg:self-start text-custom-blue hover:text-custom-navy">Register
+      <button class="text-[14px] cursor-pointer sm:text-[20px] self-end lg:self-start text-custom-blue hover:text-custom-navy text-[#1891F3] hover:text-[#011730]">Register
         Now</button>
     </div>
   </section>
 
   <!-- wrapping all three divs inside -->
   <section
-    class="py-4 xl:py-[70px] m-auto px-2 sm:px-8 w-full flex items-center justify-center gap-7 bg-custom-navy text-white">
+    class="py-4 xl:py-[70px] m-auto px-2 sm:px-8 w-full flex items-center justify-center gap-7 bg-custom-navy bg-[#011730] text-white">
 
     <!-- container for the two sets of texts -->
     <div class=" flex flex-col gap-8 lg:gap-16">
@@ -221,12 +222,14 @@
 
     <!-- FAQ -->
     <div
-      class="bg-custom-navy h lg:w-[50%] m-auto text-white px-5 py-3 rounded-[6px] flex flex-col gap-4 border-t-2 border-t-custom-blue border-solid">
+      class="bg-custom-navy bg-[#011730] lg:w-[50%] m-auto text-white px-5 py-3 rounded-[6px] flex flex-col gap-4 border-t-2 border-t-custom-blue border-solid">
       <!-- FAQ 1 -->
-      <div class="flex flex-col gap-2 border-b-2 border-b-custom-sky border-solid pb-3">
+      <div class="flex flex-col gap-2 border-b-[1px] border-b-custom-sky border-solid pb-3">
         <div class="flex justify-between items-center">
           <h3 class="font-bold  text-[14px] sm:text-[20px] lg:text-[18px]">24/7 Live Customer Support</h3>
-          <div class="w-2 h-2 bg-sky-50"></div>
+          <span class="material-symbols-outlined">
+            arrow_upwar
+            </span>
         </div>
         <p class="text-[14px] sm:text-[20px] lg:text-[16px] opacity-50">HillPay is a convenient online platform that
           connects you to various service providers. You can easily recharge your airtime, data, and pay bills directly
@@ -234,40 +237,49 @@
       </div>
 
       <!-- FAQ 2 -->
-      <div class="flex flex-col gap-2 border-b-2 border-b-custom-sky border-solid pb-3">
+      <div class="flex flex-col gap-2 border-b-[1px] border-b-custom-sky border-solid pb-3">
         <div class="flex justify-between items-center">
           <h3 class="font-bold  text-[14px] sm:text-[20px] lg:text-[18px]">24/7 Live Customer Support</h3>
-          <div class="w-2 h-2 bg-sky-50"></div>
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+            </span>
         </div>
       </div>
       <!-- FAQ 3 -->
-      <div class="flex flex-col gap-2 border-b-2 border-b-custom-sky border-solid pb-3">
+      <div class="flex flex-col gap-2 border-b-[1px] border-b-custom-sky border-solid pb-3">
         <div class="flex justify-between items-center">
           <h3 class="font-bold  text-[14px] sm:text-[20px] lg:text-[18px]">24/7 Live Customer Support</h3>
-          <div class="w-2 h-2 bg-sky-50"></div>
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+            </span>
         </div>
       </div>
       <!-- FAQ 4 -->
       <div class="flex flex-col gap-2 ">
         <div class="flex justify-between items-center">
           <h3 class="font-bold  text-[14px] sm:text-[20px] lg:text-[18px]">24/7 Live Customer Support</h3>
-          <div class="w-2 h-2 bg-sky-50"></div>
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+            </span>
         </div>
       </div>
 
     </div>
   </section>
 
-  <section class="flex justify-around items-center bg-green-600">
-    <h3 class="lg:font-bold flex flex-col  text-[12px] sm:text-[20px] lg:text-[18px]">Subscribe to our newsletter to get
+  <section class="flex justify-around items-center bg-green-600 p-[15px]">
+    <h3 class="font-bold flex flex-col  sm:w-[300px] lg:w-[500px] text-[12px] sm:text-[20px] lg:text-[32px]">Subscribe to our newsletter to get
       latest news on your inbox.</h3>
 
-    <div class="flex p-3">
-      <input type="text">
+    <div class="flex relative bg-amber-400 ">
+      <input type="text" placeholder="Enter your email" class="bg-white outline-none text-[14px] py-[6px] pl-2 w-[200px] ">
+      <button class="absolute right-[0px] p-[9px] bg-[#1891F3] text-white text-[10px] rounded-[8px]">
+        Subscribe
+      </button>
     </div>
   </section>
 
-  <footer class="bg-custom-navy px-5 lg:px-36 py-4 flex flex-wrap text-white justify-between gap-8">
+  <footer class="bg-custom-navy bg-[#011730] px-5 lg:px-36 py-4 flex flex-wrap text-white justify-between gap-8">
     <div class="flex flex-col gap-4 w-[150px]">
       <img class="w-24 sm:w-full" src="./src/images/logo.svg" alt="">
       <h3 class="text-[12px] text-sm">HillPay: Your One-Stop
