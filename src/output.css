@@ -5,8 +5,8 @@
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", monospace;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
     --color-red-50: oklch(0.971 0.013 17.38);
     --color-red-100: oklch(0.936 0.032 17.717);
     --color-red-200: oklch(0.885 0.062 18.334);
@@ -327,12 +327,9 @@
     --shadow-2xs: 0 1px rgb(0 0 0 / 0.05);
     --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1),
-      0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-      0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     --inset-shadow-2xs: inset 0 1px rgb(0 0 0 / 0.05);
     --inset-shadow-xs: inset 0 1px 1px rgb(0 0 0 / 0.05);
@@ -713,14 +710,8 @@
       max-width: 96rem !important;
     }
   }
-  .-m-1 {
-    margin: calc(var(--spacing) * -1);
-  }
   .-m-1\.5 {
     margin: calc(var(--spacing) * -1.5);
-  }
-  .-m-2 {
-    margin: calc(var(--spacing) * -2);
   }
   .-m-2\.5 {
     margin: calc(var(--spacing) * -2.5);
@@ -843,14 +834,8 @@
   .max-h-screen {
     max-height: 100vh;
   }
-  .min-h-none {
-    min-height: none;
-  }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -905,9 +890,6 @@
   }
   .min-w-\[160px\] {
     min-width: 160px;
-  }
-  .min-w-none {
-    min-width: none;
   }
   .min-w-screen {
     min-width: 100vw;
@@ -1341,9 +1323,6 @@
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
-  .gap-\[0px\] {
-    gap: 0px;
-  }
   .gap-\[8px\] {
     gap: 8px;
   }
@@ -1355,9 +1334,6 @@
   }
   .gap-\[36px\] {
     gap: 36px;
-  }
-  .gap-\[40px\] {
-    gap: 40px;
   }
   .gap-\[60px\] {
     gap: 60px;
@@ -1815,23 +1791,20 @@
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
   }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
-  }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
-  .p-\[9px\] {
-    padding: 9px;
-  }
   .p-\[15px\] {
     padding: 15px;
   }
   .p-\[1rem\] {
     padding: 1rem;
+  }
+  .p-\[9px\] {
+    padding: 9px;
   }
   .p-\[40px\] {
     padding: 40px;
@@ -2640,31 +2613,6 @@
       padding-inline: calc(var(--spacing) * 8);
     }
   }
-  .sm\:px-\[0px\] {
-    @media (width >= 40rem) {
-      padding-inline: 0px;
-    }
-  }
-  .sm\:px-\[300px\] {
-    @media (width >= 40rem) {
-      padding-inline: 300px;
-    }
-  }
-  .sm\:px-\[30\] {
-    @media (width >= 40rem) {
-      padding-inline: 30;
-    }
-  }
-  .sm\:px-\[30px\] {
-    @media (width >= 40rem) {
-      padding-inline: 30px;
-    }
-  }
-  .sm\:px-\[3\] {
-    @media (width >= 40rem) {
-      padding-inline: 3;
-    }
-  }
   .sm\:px-\[25px\] {
     @media (width >= 40rem) {
       padding-inline: 25px;
@@ -2673,11 +2621,6 @@
   .sm\:px-\[40px\] {
     @media (width >= 40rem) {
       padding-inline: 40px;
-    }
-  }
-  .sm\:px-\[50px\] {
-    @media (width >= 40rem) {
-      padding-inline: 50px;
     }
   }
   .sm\:py-\[70px\] {
@@ -2808,41 +2751,6 @@
   .lg\:px-36 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 36);
-    }
-  }
-  .lg\:px-\[10px\] {
-    @media (width >= 64rem) {
-      padding-inline: 10px;
-    }
-  }
-  .lg\:px-\[7000px\] {
-    @media (width >= 64rem) {
-      padding-inline: 7000px;
-    }
-  }
-  .lg\:px-\[700px\] {
-    @media (width >= 64rem) {
-      padding-inline: 700px;
-    }
-  }
-  .lg\:px-\[70\] {
-    @media (width >= 64rem) {
-      padding-inline: 70;
-    }
-  }
-  .lg\:px-\[70p\] {
-    @media (width >= 64rem) {
-      padding-inline: 70p;
-    }
-  }
-  .lg\:px-\[70px\] {
-    @media (width >= 64rem) {
-      padding-inline: 70px;
-    }
-  }
-  .lg\:px-\[7\] {
-    @media (width >= 64rem) {
-      padding-inline: 7;
     }
   }
   .lg\:px-\[45px\] {
